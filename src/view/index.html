@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VueJs - Guia completo</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{mensagem}}</p>
+        <p>meu nome é {{nome}}</p>
+        <input v-on:input="mudarNome">
+    </div>
+    <script text="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                mensagem: 'Ola Vuejs',
+                nome: ""
+            },
+            methods: {
+                mudarNome: function (event) {
+                    this.nome = event.target.value;
+                    axios.get(`http://localhost:3000/teste/${this.nome}`)
+                    .then(response => (this.nome = response.data))
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>
