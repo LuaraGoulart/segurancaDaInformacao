@@ -1,7 +1,7 @@
 const User = require('../../models/User');
 
 const createUser = async (req, res) => {
-    // Create a new user
+    // Criando novo usuario
     try {
         const user = new User(req.body)
         await user.save()
@@ -13,7 +13,7 @@ const createUser = async (req, res) => {
 };
 
 const loginUser = async (req, res) => {
-    //Login a registered user
+    //Login com usuário cadastrado
     try {
         const { email, password } = req.body
         const user = await User.findByCredentials(email, password)
@@ -29,7 +29,7 @@ const loginUser = async (req, res) => {
 }
 
 const logoutUser = async (req, res) => {
-    // Log user out of the application
+    // Desconectando o usuário
     try {
         req.user.tokens = req.user.tokens.filter((token) => {
             return token.token != req.token
@@ -42,7 +42,7 @@ const logoutUser = async (req, res) => {
 }
 
 const logoutAllUser = async (req, res) => {
-    // Log user out of all devices
+    // Desconectando o usuário de todas telas
     try {
         req.user.tokens.splice(0, req.user.tokens.length)
         await req.user.save()
@@ -53,7 +53,7 @@ const logoutAllUser = async (req, res) => {
 }
 
 const meUser = async (req, res) => {
-    // View logged in user profile
+    // Ver o perfil do usuário logado
     res.send(req.user)
 }
 

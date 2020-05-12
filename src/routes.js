@@ -4,7 +4,7 @@ const userRoutes     = require('./controller/user/user')
 
 const router = express.Router()
 
-//User routes 
+//Rotas do usuário
 router.get('/users/me', auth, userRoutes.meUser )
 router.post('/user', userRoutes.createUser);
 router.post('/user/login',userRoutes.loginUser );
