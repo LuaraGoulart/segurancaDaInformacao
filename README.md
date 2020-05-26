@@ -2,7 +2,6 @@
 Integrantes:
 - Fabiola Siqueira
 - Luara Goulart
-- Luiz Silva
 - Matheus Rodrigues
 
 
