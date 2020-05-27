@@ -1,4 +1,4 @@
-# segurancaDaInformacao
+# SegurancaDaInformacao
 Integrantes:
 - Fabiola Siqueira
 - Luara Goulart
