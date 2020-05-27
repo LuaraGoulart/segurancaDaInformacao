@@ -14,3 +14,4 @@ de acordo com a proposta do 38°artigo da LGPD.
 - Login/Logout
 - Visualização de dados do proprio usuário
 - Utilização do bcryptjs para a criptografia da senha do usuário
+- Banco de dados MongoDB 
