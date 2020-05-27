@@ -9,9 +9,14 @@ Projeto realizado por alunos da Fatec - Prof Jessen Vidal que tem intuito de sol
 sem a autorização e/ou conhecimento do cliente, enquadrando assim, a proteção de dados, 
 de acordo com a proposta do 38°artigo da LGPD.
 
-### Backend 
+### 1º Entrega 
+- Implementação da criptografia utilizada: bcryptjs
+
+## 2º Entrega
 - Criação de usuário
 - Login/Logout
 - Visualização de dados do proprio usuário
-- Utilização do bcryptjs para a criptografia da senha do usuário
-- Banco de dados MongoDB 
+- Implementação da criptografia na senha do usuário
+
+## 3º Entrega
+- Banco de Dados: MongoDB 
